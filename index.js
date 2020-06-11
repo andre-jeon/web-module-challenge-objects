@@ -26,11 +26,11 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
-function discount(customer){
+burger.discount = function(customer){
   if(customer === "teacher" || customer === "student"){
-    return onMenu.price - (onMenu.price * 0.25);
+    return this.price - (this.price * 0.25);
   }else if(customer === "public"){
-    return onMenu.price - (bonMenu.price * 0.1);
+    return this.price - (this.price * 0.1);
   }
 }
 
