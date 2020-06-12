@@ -122,7 +122,7 @@ console.log(getLastReview(reviews));
       reviewByRating.push(arr[i])
     } 
   }
-  console.log(reviewByRating);
+  return reviewByRating;
  }
 
 console.log(getReviewByRating(reviews, 3));
